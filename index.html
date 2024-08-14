@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ichat-app</title>
-    <script src="js/client.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <title>chat application</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <img class="logo" src="chat.png" alt="">
-    </nav>
-    <div class="container">
-    <div class="message right">mohan:hey</div>
-    <div class="message left">rita:hlo </div>
-    <div class="message left">rita:hmm </div>
+    <div class="person-selector">
+     <button class="button person-selector-button active-person" id="jony-selector">jony</button>
+     <button class="button person-selector-button" id="jemmy-selector">jemmy</button>      
     </div>
-    <div class="send">
-        <form action="#" id="send-container">
-            <input type="text" name="messageInp" id="messageInp">
-            <button class="btn" type="submit">send</button>
-        </form>
+    <div class="chat-container">
+        <h2 class="chat-header">jony chatting...</h2>
+        <div class="chat-messages">
+            <div class="message blue-bg">
+            <div class="message-sender">jony</div>
+            <div class="message-text">hey</div>
+            <div class="message-timestamp">11:03 AM</div>
+        </div>
+        <div class="message gray-bg">
+        <div class="message-sender">jemmy</div>
+        <div class="message-text">hello</div>
+        <div class="message-timestamp">11:03 AM</div>
     </div>
+    <form class="chat-input-form">
+        <input type="text" class="chat-input" requried placeholder="Type here jony.."/>
+        <button type="submit" class="button send-button">Send</button>
+    </form>
+    <button class="button clear-chat-button">Clear Chat</button>
+</div>
+<script src="app.js"></script>
 </body>
 </html>
